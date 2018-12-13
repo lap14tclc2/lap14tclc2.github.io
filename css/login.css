@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+
+/*============== 
+    ELEMENT STYLE
+=====================*/
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+
+/*============== 
+    LAYOUT STYLE
+=====================*/
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+#left-contain {
+    display: inline-block;
+    width: 40%;
+    height: 100vh;
+    background-image: url("../img/night-photograph-2183637_1920.jpg");
+    background-repeat: round;
+}
+
+.signup-navbar{
+    position: fixed;
+    top: 5px;
+    right: 3em;
+    font-size: 1.1em;
+}
+
+.signup-navbar a{
+    text-decoration: none;
+    border: 1px solid #111;
+    color: royalblue;
+    padding: 0.5em;
+    margin-left: 5px;
+}
