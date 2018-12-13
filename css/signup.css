@@ -1,0 +1,50 @@
+
+*{
+    box-sizing: border-box;
+}
+/*============== 
+    ELEMENT STYLE
+=====================*/
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+}
+
+/*============== 
+    LAYOUT STYLE
+=====================*/
+.container{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.image{
+    width: 55vw; 
+    height: 100vh;
+    background-image: url('../img/pexels-photo-1406282.jpeg');
+    background-repeat: round;
+}
+
+
+.content{
+    width: 35vw;
+}
+
+.signin-navbar{
+    float: right;
+}
+
+/* ==============
+    MEDIA QUERIES
+=================*/
+@media(min-width: 769px){
+    .col {
+        float: left;
+        margin-left: -4px;
+    }
+    .clearfix{
+        content: " ";
+        clear: both;
+    }
+}
