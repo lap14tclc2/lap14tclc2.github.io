@@ -22,10 +22,18 @@ body{
 
 #left-contain {
     display: inline-block;
-    width: 40%;
+    width: 45%;
     height: 100vh;
     background-image: url("../img/night-photograph-2183637_1920.jpg");
     background-repeat: round;
+}
+
+#right-contain{
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    margin-left: 2em;
+    margin-right: 2em;
 }
 
 .signup-navbar{
@@ -41,4 +49,56 @@ body{
     color: royalblue;
     padding: 0.5em;
     margin-left: 5px;
+}
+
+#right-contain .title{
+    margin-top: 8em;
+}
+
+.title h3{
+    font-size: 1.8em;
+}
+
+.title p{
+    font-size: 1.1em;
+    opacity: 0.8;
+}
+
+#right-contain .main-form {
+    margin: 1.5em 0;
+}
+
+.main-form .form-group {
+    padding: 1em 0;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"]{
+    padding: 1em 0;
+    width: 100%;
+    margin: 20px 0;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.form-group input[type='submit']{
+    padding: 0.7em 0;
+    width: 100%;
+    background-color: royalblue;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.form-group .pass-row a {
+    float: right;
+    text-decoration: none;
+    font-size: 1.1em;
+    color: royalblue;
+    margin-right: 0.7em;
+}
+
+.clearfix {
+    content: " ";
+    clear: both;
 }
