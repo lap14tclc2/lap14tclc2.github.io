@@ -8,13 +8,14 @@
 body{
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.2em;
+    background-color: #DCDCDC;
 }
 
 /*=============
     LAYOUT STYLE
 ===============*/
 
-/* --------- NAVBAR STYLE */
+/* --------- NAVBAR STYLE-------------- */
 #main-navbar{
     background-color: lightblue;
     display: inline-block;
@@ -125,4 +126,118 @@ body{
 .navbar-menu a:hover{
     color: black;
     background-color: silver;
+}
+
+/*------------- MAIN CONTENT STYLE ------------*/
+.section {
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.first-section {
+    min-height: 13em;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.row {
+    float: left;
+    margin-right: 20px;
+    min-height: 100%;
+}
+
+/* first section*/
+.search-price {
+    background-color: whitesmoke;
+    height: 100%;
+}
+
+.title {
+    background-color: lightblue;
+    opacity: 0.95;
+    text-align: center;
+    color: white;
+    font-size: 1.1em;
+    line-height: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100%;
+}
+
+/* search car by price */
+.search-price .list-item{
+    padding-bottom: 1em;
+    margin-top: 3.5em;
+}
+
+.search-price ul {
+    margin: 15px 14px;
+    overflow: hidden;
+}
+
+.search-price .list-item > ul li {
+    width: 130px;
+    height: 30px;
+}
+
+.list-item ul li {
+    float: left;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
+    border: 1px solid black;
+    text-align: center;
+    margin: 0 5px;
+}
+
+.search-price ul > li a{
+    text-decoration: none;
+    color: #111;
+}
+
+/* search car by brandname of car */
+.search-brandname {
+    background-color: whitesmoke;
+    height: 100%;
+}
+
+.search-brandname .list-item ul {
+    padding: 5px;
+    overflow: hidden;
+}
+.search-brandname .list-item ul li {
+    margin: 5px;
+    box-shadow: 1px 1px 5px black;
+    float: left;
+}
+
+.car-logo {
+    width: 100px;
+    height: 60px;
+    border-radius: 5px;
+    box-shadow: 6px 4px 5px black;
+}
+
+/* search car by year */
+.search-year {
+    background-color: whitesmoke;
+    height: 100%;
+}
+
+
+.search-year .list-item ul li {
+    float: none;
+    width: 100px;
+    height: 35px;
+    margin: 12px 25px;
+}
+
+.search-year .list-item a{
+    text-decoration: none;
+    color: #111;
+}
+/*===== CLEAR FLOAT=========*/
+.clearfix {
+    clear: both;
+    content: " ";
 }
