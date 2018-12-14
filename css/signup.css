@@ -93,7 +93,8 @@ body{
     font-family: 'Times New Roman', Times, serif;
 }
 
-.form-group input[type="text"]{
+.form-group input[type="text"],
+.form-group input[type="password"]{
     width: 38vw;
     height: 3em;
     border: none;
