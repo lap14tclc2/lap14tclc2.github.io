@@ -1,14 +1,86 @@
-
+* {
+    box-sizing: border-box;
+}
 
 /*==============
     ELEMENT STYLE
 ===============*/
-
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: #fbf9fa;
+}
 /*=============
     LAYOUT STYLE
 ===============*/
 
+
 /* --------- NAVBAR STYLE-------------- */
+.main-navbar {
+    background: #d7f7f5;
+    position: relative;
+}
+
+.main-navbar .logo {
+    width: 50px;
+    max-height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 2em;
+}
+
+.dropdown-address {
+    background-color: white;
+    position: absolute;
+    top: 5px;
+    left: 6em;
+}
+
+.main-navbar .dropdown-address > a {
+    color: black;
+}
+
+.dropdown-address > a span {
+    margin:0 10px;
+}
+
+.main-navbar  a:hover {
+    color: white !important; 
+    background-color: orange !important;
+}
+
+.dropdown-address .dropdown-menu  {
+    width: 100%;
+}
+
+.navbar-right {
+    margin-top: 5px;
+}
+
+li.navbar-right a {
+    color: white;
+    font-size: 1.1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li.navbar-right a:hover {
+    background-color: orange;
+    color: black;
+}
+
+li.home-link a {
+    color: orange;
+}
+
+li.login-link a {
+    background: orange;
+    color: white;
+    margin-right: 4em;
+}
+
+
 
 
 /*===== CLEAR FLOAT=========*/
+.clearfix{
+    clear: both;
+}

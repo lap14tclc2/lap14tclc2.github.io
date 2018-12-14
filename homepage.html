@@ -4,13 +4,51 @@
 <head>
     <meta charset="utf-8">
     <title>Homepage</title>
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../css/homepage.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/homepage.css">
 </head>
 
 <body>
-    
+    <!-- Navbar component-->
+    <nav class="navbar navbar-fixed-top main-navbar">
+        <div class="container-fluid">
+            <ul class="nav nav-pills">
+                <li class="navbar-header">
+                    <div class="navbar-brand">
+                        <img class="logo" src="img/logo.jpg" alt="">
+                    </div>
+                </li>
+                <li role="presentation" class="dropdown dropdown-address">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                        aria-expanded="false">
+                        <span class="glyphicon glyphicon-map-marker"></span>TP HỒ CHÍ MINH
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">TP ĐÀ NẴNG</a></li>
+                        <li><a href="#">TP HỒ CHÍ MINH</a></li>
+                        <li><a href="#">TP CẦN THƠ</a></li>
+                    </ul>
+                </li>
+
+                <li class="login-link navbar-right"><a href="#">Đăng nhập</a></li>
+                <li class="navbar-right"><a href="#">Đăng tin</a></li>
+                <li class="navbar-right"><a href="#">Đánh giá xe</a></li>
+                <li class="navbar-right"><a href="#">So sánh xe</a></li>
+                <li class="home-link navbar-right"><a href="#">Trang chủ</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
