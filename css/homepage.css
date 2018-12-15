@@ -16,16 +16,16 @@ body {
 
 /* --------- NAVBAR STYLE-------------- */
 .main-navbar {
-    background: #d7f7f5;
+    background: #336699;
     position: relative;
 }
 
 .main-navbar .logo {
-    width: 50px;
-    max-height: 50px;
+    width: 70px;
+    max-height: 40px;
     position: absolute;
-    bottom: 0;
-    left: 2em;
+    bottom: 0px;
+    left: 10px;
 }
 
 .dropdown-address {
@@ -77,10 +77,140 @@ li.login-link a {
     margin-right: 4em;
 }
 
+/*----------- SEARCH COMPONENT ------------*/
+.row-margin-bottom {
+    margin-bottom: 1.5em;
+}
+
+.equal {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:  flex;
+    flex-direction: row;
+    max-height: 200px;
+}
+
+.column {
+    width: 98%;
+    height: 100%;
+    background: white;
+}
+
+.ptitle {
+    text-transform: uppercase;
+    width: 100%;
+    background: #336699;
+    padding: 7px 0;
+    color: white;
+    text-align: center;
+}
+
+.search-box{
+    padding: 0 5px;
+}
 
 
+ /*---- search by price------- */
+.price {
+    display: flex;
+    justify-content: center;
+}
+
+ul.list-inline {
+    margin-left: 0;
+    padding: 0;
+    line-height: 2.5em;
+}
+
+
+.list-inline-item {
+    padding: 6px 0 ;
+    border: 1px solid black;
+    width: 25%;
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 1px 2px;
+    margin: 10px 10px;
+}
+
+.padding-div{
+    padding-bottom: 20px;
+}
+/*---- search by car logo-------*/
+.car {
+    display: flex;
+    justify-content: center;
+}
+.car > li img {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+/*------search by year------------*/
+
+.year {
+    text-align: center;
+}
+
+.year li {
+    width: 50%;
+    margin: 10px auto;
+    max-height: 30px;
+}
+
+/* ------- search by car's type------------*/
+.type-car {
+    width: 100%;
+    position: relative;
+}
+
+.type-car img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.type-car p.ptitle {
+    position: absolute;
+    bottom: -10px;
+}
+
+/*------- search by business-------*/
 
 /*===== CLEAR FLOAT=========*/
 .clearfix{
     clear: both;
+    display: block;
+}
+
+
+/* =======
+    RESPONSIVE
+==========*/
+@media(min-width: 320px) and (max-width: 768px){
+    
+    .equal {
+        flex-direction: column;
+    }
+
+    .search-box {
+        margin: 10px 0;
+    }
+
+    .price-second {
+        display: none;
+    }
+
+}
+
+@media(min-width: 780px) and (max-width:1279px){
+    
+    li.list-inline-item {
+        font-size: 0.9em;
+        word-spacing: -1px;
+        padding: 0;
+    }
+
 }
