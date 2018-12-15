@@ -5,6 +5,10 @@
 /*==============
     ELEMENT STYLE
 ===============*/
+html {
+
+}
+
 body {
     font-family: 'Times New Roman', Times, serif;
     background: #fbf9fa;
@@ -78,8 +82,15 @@ li.login-link a {
 }
 
 /*----------- SEARCH COMPONENT ------------*/
+
+
 .row-margin-bottom {
     margin-bottom: 1.5em;
+}
+
+.container .row {
+    padding: 0;
+    margin: 0;
 }
 
 .equal {
