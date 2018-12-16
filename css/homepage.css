@@ -1,264 +1,251 @@
-*{
+* {
     box-sizing: border-box;
 }
 
 /*==============
     ELEMENT STYLE
 ===============*/
-body{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1.2em;
-    background-color: #DCDCDC;
-}
 
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: #fbf9fa;
+}
 /*=============
     LAYOUT STYLE
 ===============*/
 
+
 /* --------- NAVBAR STYLE-------------- */
-#main-navbar{
-    background-color: lightblue;
-    display: inline-block;
-    width: 100%;
-    margin: auto;
-    position: relative;
-    max-height: 100px;;
-}
-
-.logo{
-    width: 90px;
-    height: 90px;
-    background: url("../img/logo.jpg");
-    background-repeat: round;
-    opacity: 0.9;
-    margin: 10px;
-    float: left;
-}
-/* the container cover address dropdown*/
-.address-dropdown {
+.main-navbar {
+    background: #336699;
     position: relative;
 }
 
-.address-dropdown:hover .dropdown-content{
-    display: block;
-}
-
-/* style the button */
-.dropdown-btn{
-    display: inline-block;
-    background-color: white;
-    overflow: hidden;
-    text-align: center;
-    padding: 8px;
-    font-size: 0.7em;
+.main-navbar .logo {
+    width: 70px;
+    max-height: 40px;
     position: absolute;
-    top: 3em;
-    margin-left: 2.5em;
+    bottom: 0px;
+    left: 10px;
 }
 
-.dropdown-btn .arrow-down{
-    width: 0; 
-    height: 0; 
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-top: 8px solid #111;
-    float: right;
-    margin: 3px 0 5px 5px;
-}
-
-/* the content inside address dropdown*/
-.dropdown-content{
-    display: none;
-    /* the position  relative to address-dropdown container */
-    position: absolute; 
-    left: 7.6em;
-    top: 3.9em;
+.dropdown-address {
     background-color: white;
-    min-width: 150px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 2);
-    z-index: 1;
+    position: absolute;
+    top: 5px;
+    left: 6em;
 }
 
-.dropdown-content a {
+.main-navbar .dropdown-address > a {
     color: black;
-    text-decoration: none;
-    display: block;
-    padding: 10px;
 }
 
-/* Horizontal menu in the right conner of navbar*/
-.navbar-menu {
-    float: right;
-    position: absolute;
-    top: 2em;
-    right: 2em;
+.dropdown-address > a span {
+    margin:0 10px;
+}
+
+.main-navbar  a:hover {
+    color: white !important; 
+    background-color: orange !important;
+}
+
+.dropdown-address .dropdown-menu  {
+    width: 100%;
+}
+
+.navbar-right {
+    margin-top: 5px;
+}
+
+li.navbar-right a {
+    color: white;
+    font-size: 1.1em;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.9em;
-}
-.navbar-menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
 }
 
-.navbar-menu ul > li {
-    float: left;
-}
-
-.navbar-menu ul > li:last-child{
+li.navbar-right a:hover {
     background-color: orange;
-    text-align: center;
-    padding: 3px;
+    color: black;
 }
 
-.navbar-menu ul > li:first-child a {
+li.home-link a {
     color: orange;
 }
 
-.navbar-menu a{
-    display: block;
-    text-decoration: none;
-    padding: 5px;
-    color: #F5F5F5;
+li.login-link a {
+    background: orange;
+    color: white;
+    margin-right: 4em;
 }
 
-.navbar-menu a:hover{
-    color: black;
-    background-color: silver;
+/*----------- SEARCH COMPONENT ------------*/
+
+
+.row-margin-bottom {
+    margin-bottom: 1.5em;
 }
 
-/*------------- MAIN CONTENT STYLE ------------*/
-.section {
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
+.container .row {
+    padding: 0;
+    margin: 0;
 }
 
-.first-section {
-    min-height: 12em;
+div.year-column,
+div.price-column,
+div.car-column {
+    height: 200px;
+}
+
+.equal {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    
+}
+
+.column {
+    width: 98%;
+    height: 100%;
+    background: white;
+}
+
+.ptitle {
+    text-transform: uppercase;
+    width: 100%;
+    background: #336699;
+    padding: 7px 0;
+    color: white;
+    text-align: center;
+}
+
+
+
+ /*---- search by price------- */
+.price {
     display: flex;
-    margin: 0 auto;
     justify-content: center;
 }
 
-.row {
-    float: left;
-    margin-right: 20px;
-    min-height: 100%;
+ul.list-inline {
+    margin-left: 0;
+    padding: 0;
+    line-height: 2.5em;
 }
 
-/* -----------------------------
-            first section
--------------------------------*/
-.search-price {
-    background-color: whitesmoke;
-    height: 95%;
-}
 
-.title {
-    background-color: lightblue;
-    opacity: 0.95;
+.list-inline-item {
+    padding: 6px 0 ;
+    border: 1px solid black;
+    width: 25%;
+    height: 40px;
+    border-radius: 5px;
     text-align: center;
-    color: white;
-    font-size: 1.1em;
-    line-height: 2em;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-shadow: 1px 2px;
+    margin: 10px 10px;
+}
+
+.padding-div{
+    padding-bottom: 20px;
+}
+/*---- search by car logo-------*/
+.car {
+    display: flex;
+    justify-content: center;
+}
+.car > li img {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+/*------search by year------------*/
+
+.year {
+    text-align: center;
+}
+
+.year li {
+    width: 50%;
+    margin: 10px auto;
+    max-height: 30px;
+}
+
+/* ------- search by car's type------------*/
+.car-type-row {
+    max-height: 200px;
+    margin-top: 10px;
+}
+
+.car-type-row img {
+    width: 100%;
+    max-height: 180px;
+}
+
+.car-type-row p.ptitle {
     width: 100%;
 }
 
-/* search car by price */
-.search-price .list-item{
-    padding-bottom: 1em;
-    margin-top: 3.5em;
+/*----------- search car for using purpose--------*/
+.car-for-purpose {
+    max-height: 200px;
+    padding:  0 15px;
+    margin:0 ;
+    margin-top: 20px;
 }
 
-.search-price ul {
-    margin: 15px 14px;
-    overflow: hidden;
+.car-for-purpose img {
+    max-height: 160px;
+    width: 100%;
 }
 
-.search-price .list-item > ul li {
-    width: 130px;
-    height: 30px;
+.car-for-purpose p.ptitle{
+    width: 100%;
 }
-
-.list-item ul li {
-    float: left;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px black;
-    border: 1px solid black;
-    text-align: center;
-    margin: 0 5px;
-}
-
-.search-price ul > li a{
-    text-decoration: none;
-    color: #111;
-}
-
-/* search car by brandname of car */
-.search-brandname {
-    background-color: whitesmoke;
-    height: 95%;
-}
-
-.search-brandname .list-item ul {
-    padding: 5px;
-    overflow: hidden;
-}
-.search-brandname .list-item ul li {
-    margin: 5px;
-    box-shadow: 1px 1px 5px black;
-    float: left;
-}
-
-.car-logo {
-    width: 100px;
-    height: 60px;
-    border-radius: 5px;
-    box-shadow: 6px 4px 5px black;
-}
-
-/* search car by year */
-.search-year {
-    background-color: whitesmoke;
-    height: 95%;
-}
-
-
-.search-year .list-item ul li {
-    float: none;
-    width: 100px;
-    height: 35px;
-    margin: 12px 25px;
-
-}
-
-.search-year .list-item a{
-    text-decoration: none;
-    color: #111;
-}
-
-/* -----------------------------
-            second section
--------------------------------*/
-.second-section {
-    min-height: 14em;
-    justify-content: center;
-    margin-top: 1em;
-}
-
-.second-section .img-background .first,
-.second-section .img-background .second {
-    background-image: url("../img/family_car.jpg");
-    background-repeat: round;
-}
-
 
 
 /*===== CLEAR FLOAT=========*/
-.clearfix {
+.clearfix{
     clear: both;
-    content: " ";
+    display: block;
+}
+
+
+/* =======
+    RESPONSIVE
+==========*/
+@media(min-width: 320px) and (max-width: 960px){
+    .price-column,
+    .year-column,
+    .car-column,
+    .car-type-row {
+        margin: 0.5em 0;
+    }
+
+    .car-type-row {
+        margin: 10px 0;
+    }
+
+    .price-column {
+        font-size: 10px;
+        word-spacing: -1px;
+    }
+
+    .year-column, 
+    .car-column {
+        display: none;
+    }
+
+    .second-row .type-car {
+        padding-bottom: 2em;
+    }
+}
+
+@media(min-width: 780px) and (max-width:1279px){
+    
+    li.list-inline-item {
+        font-size: 0.9em;
+        word-spacing: -1px;
+        padding: 0;
+    }
+
 }

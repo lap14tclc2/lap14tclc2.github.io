@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/homepage.css">
+</head>
+
+<body>
+    <!-- Navbar component-->
+    <nav class="navbar navbar-fixed-top main-navbar">
+        <div class="container-fluid">
+            <ul class="nav nav-pills">
+                <li class="navbar-header">
+                    <div class="navbar-brand">
+                        <img class="logo" src="img/logo.png" alt="">
+                    </div>
+                </li>
+                <li role="presentation" class="dropdown dropdown-address">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                        aria-expanded="false">
+                        <span class="glyphicon glyphicon-map-marker"></span>TP HỒ CHÍ MINH
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">TP ĐÀ NẴNG</a></li>
+                        <li><a href="#">TP HỒ CHÍ MINH</a></li>
+                        <li><a href="#">TP CẦN THƠ</a></li>
+                    </ul>
+                </li>
+
+                <li class="login-link navbar-right"><a href="#">Đăng nhập</a></li>
+                <li class="navbar-right"><a href="#">Đăng tin</a></li>
+                <li class="navbar-right"><a href="#">Đánh giá xe</a></li>
+                <li class="navbar-right"><a href="#">So sánh xe</a></li>
+                <li class="home-link navbar-right"><a href="#">Trang chủ</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- SEARCH COMPONENT -->
+    <div class="row">
+        <!-- First row-->
+        <div class="col-md-10 col-md-offset-1 ">
+            <div class="col-md-12">
+                <div class="col-md-5 col-xs-12 price-column">
+                    <div class="column">
+                        <p class="ptitle">tìm theo giá</p>
+                        <ul class="list-inline price">
+                            <li class="list-inline-item">dưới 200 tr</li>
+                            <li class="list-inline-item">200 tr - 400 tr
+                            </li>
+                            <li class="list-inline-item">400 tr - 600 tr</li>
+                        </ul>
+                        <ul class="list-inline price price-second">
+                            <li class="list-inline-item">600tr - 1 tỷ</li>
+                            <li class="list-inline-item">1 tỷ - 1.5 tỷ</li>
+                            <li class="list-inline-item"> 1.5 tỷ</li>
+                        </ul>
+                        <div class="padding-div"></div>
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-xs-12  car-column">
+                    <div class="column">
+                        <p class="ptitle">tìm theo hãng xe</p>
+                        <ul class="list-inline car">
+                            <li><img src="img/madza.jpg" alt=""></li>
+                            <li><img src="img/honda.png" alt=""></li>
+                            <li><img src="img/hyundai.jpg" alt=""></li>
+                            <li><img src="img/lexus.jpg" alt=""></li>
+                        </ul>
+
+                        <ul class="list-inline car">
+                            <li><img src="img/ford.png" alt=""></li>
+                            <li><img src="img/chervolet.jpg" alt=""></li>
+                            <li><img src="img/merc.png" alt=""></li>
+                            <li><img src="img/toyota.png" alt=""></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-xs-12 year-column">
+                    <div class="column">
+                        <p class="ptitle">năm</p>
+                        <ul class="list-group year">
+                            <li class="list-inline-item">2016</li>
+                            <li class="list-inline-item">2015</li>
+                            <li class="list-inline-item">2014</li>
+                            <li class="list-inline-item">trước 2013</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row ">
+        <!-- Second rows-->
+        <div class="col-md-10 col-md-offset-1">
+            <div class="col-md-12">
+                <div class="col-md-6 col-xs-12 car-type-row">
+                    <img src="img/family_car.jpg" alt="">
+                    <p class="ptitle">Xe dùng cho gia đình</p>
+                </div>
+                <div class="col-md-6 col-xs-12 car-type-row">
+                    <img src="img/business_car.jpg" alt="">
+                    <p class="ptitle">Xe cho doanh nghiệp</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Third rows-->
+        <div class="col-md-10 col-md-offset-1">
+            <div class="col-md-12">
+                <div class="col-md-4 col-xs-12 car-for-purpose">
+                    <img src="img/car1.jpg" alt="">
+                    <p class="ptitle">Xe dùng đi lại</p>
+                </div>
+                <div class="col-md-4 col-xs-12 car-for-purpose">
+                    <img src="img/car1.jpg" alt="">
+                    <p class="ptitle">Xe dùng du lịch</p>
+                </div>
+                <div class="col-md-4 col-xs-12 car-for-purpose">
+                    <img src="img/car3.jpg" alt="">
+                    <p class="ptitle">Xe chạy dịch vụ</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
