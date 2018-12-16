@@ -5,9 +5,6 @@
 /*==============
     ELEMENT STYLE
 ===============*/
-html {
-
-}
 
 body {
     font-family: 'Times New Roman', Times, serif;
@@ -93,13 +90,17 @@ li.login-link a {
     margin: 0;
 }
 
+div.year-column,
+div.price-column,
+div.car-column {
+    height: 200px;
+}
+
 .equal {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display:  flex;
-    flex-direction: row;
-    max-height: 200px;
+    
 }
 
 .column {
@@ -117,9 +118,6 @@ li.login-link a {
     text-align: center;
 }
 
-.search-box{
-    padding: 0 5px;
-}
 
 
  /*---- search by price------- */
@@ -173,22 +171,37 @@ ul.list-inline {
 }
 
 /* ------- search by car's type------------*/
-.type-car {
+.car-type-row {
+    max-height: 200px;
+    margin-top: 10px;
+}
+
+.car-type-row img {
     width: 100%;
-    position: relative;
+    max-height: 180px;
 }
 
-.type-car img {
+.car-type-row p.ptitle {
     width: 100%;
-    max-height: 100%;
 }
 
-.type-car p.ptitle {
-    position: absolute;
-    bottom: -10px;
+/*----------- search car for using purpose--------*/
+.car-for-purpose {
+    max-height: 200px;
+    padding:  0 15px;
+    margin:0 ;
+    margin-top: 20px;
 }
 
-/*------- search by business-------*/
+.car-for-purpose img {
+    max-height: 160px;
+    width: 100%;
+}
+
+.car-for-purpose p.ptitle{
+    width: 100%;
+}
+
 
 /*===== CLEAR FLOAT=========*/
 .clearfix{
@@ -200,20 +213,31 @@ ul.list-inline {
 /* =======
     RESPONSIVE
 ==========*/
-@media(min-width: 320px) and (max-width: 768px){
-    
-    .equal {
-        flex-direction: column;
+@media(min-width: 320px) and (max-width: 960px){
+    .price-column,
+    .year-column,
+    .car-column,
+    .car-type-row {
+        margin: 0.5em 0;
     }
 
-    .search-box {
+    .car-type-row {
         margin: 10px 0;
     }
 
-    .price-second {
+    .price-column {
+        font-size: 10px;
+        word-spacing: -1px;
+    }
+
+    .year-column, 
+    .car-column {
         display: none;
     }
 
+    .second-row .type-car {
+        padding-bottom: 2em;
+    }
 }
 
 @media(min-width: 780px) and (max-width:1279px){
