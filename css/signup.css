@@ -8,157 +8,103 @@
 body{
     font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
+
 }
 
 /*============== 
     LAYOUT STYLE
 =====================*/
-.container{
-    width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
+
+
+.col-md-6,
+.col-lg-6 
+.col-xs-6 {
+    padding: 0;
 }
 
-.image{
-    width: 55vw; 
+.background-img img {
+    width: 100%;
     height: 100vh;
-    background-image: url('../img/pexels-photo-1406282.jpeg');
-    background-repeat: round;
 }
 
-
-.content{
-    width: 35vw;
-}
-
-.signin-navbar{
-    float: right;
-    font-size: 1em;
-    margin-top: 2em;
-}
-
-.signin-navbar a{
-    text-decoration: none;
-    border: 1px solid black;
-    padding: 10px;
-    color: blue;
-}
-
-
-
-.header h4 {
-    font-size: 2em;
-    font-weight: 500;
-    margin-bottom: 0;
-}
-
-.header p {
-    font-size: 1em;
-    opacity: 0.7;
-}
-
-#main-form {
-    width: 100%;
-    box-sizing: content-box;
-    margin-left: 2em;
-
-}
-
-.header h2{
-    margin-bottom: 0;
-}
-
-.form {
-    margin-top: 1.5em;
-    max-width: 640px;
-    line-height: 2.7em;
-}
-
-.form ul {
-    margin-top: 2em;
-    margin-bottom: 2.5em;
-}
-
-.form ul li{
-    margin: 1em 0;
-}
-
-.form input[type="submit"]{
-    width: 38vw;
-    min-height: 3em;
+.signin-inform {
     text-align: center;
-    color: white;
-    font-size: 1.2em;
-    background-color: #5893d4;
-    font-family: 'Times New Roman', Times, serif;
+    margin-right: 2em;
+    margin-bottom: 3em;
 }
 
-.form-group input[type="text"],
-.form-group input[type="password"]{
-    width: 38vw;
-    height: 3em;
+.signin-inform p {
+    font-size: 18px;
+    margin-top: 2em;
+    position: relative;
+}
+
+.signin-inform p > span {
+    color: dodgerblue;
+}
+
+.signin-inform a {
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.signin-inform a:hover {
+    background: dodgerblue;
+    color: #111;
+}
+
+
+.login-form {
+    margin-top: 5em;
+}
+
+
+
+.login-form  form input[type="text"] {
     border: none;
-    border-bottom: 1px solid #111;
+    border-bottom: 1px solid black;
+    border-radius: 0;
+    padding: 20px 0;
+    margin: 10px 0;
 }
 
-.form-group  li {
-    margin: 0 2em;
+.login-form  form > button {
+    width: 100%;
+    padding: 10px 0;
 }
 
-.form-group label{
-    font-weight: 600;
-}
+
+
 
 /* ==============
     MEDIA QUERIES
 =================*/
-@media(min-width: 769px){
-    .col {
-        float: left;
-    }
-    .clearfix{
-        content: " ";
-        clear: both;
-    }
-}
-
-@media(max-width: 769px){
-
-    .signin-navbar{
-        float: none;
-        margin-left: 2.5em;
-    }
-
-    .container{
-        width: 90%;
-        margin: 0 auto;
-        clear: both;
-    }
-
-    .content{
-        width: 90%
-    }
-
-    .signin-navbar{
-        display: block;
-    }
-
-    .image{
-        max-width: 100%; 
-        height: 480px;
-        background-image: url('../img/pexels-photo-1406282.jpeg');
-        background-repeat: round;
-    }
-
+@media(min-width: 320px) and (max-width:1028px){
     
-    .form input[type="submit"]{
-        width: 90%;
-        min-height: 1em;
-        text-align: center;
-        color: white;
-        font-size: 0.9em;
-        background-color: #5893d4;
-        font-family: 'Times New Roman', Times, serif;
+
+    .signin-inform a {
+        display: block;
+        width: 50%;
+        position: absolute;
+        left: 25%;
     }
 
+    .login-form .title {
+        margin: 50px 5px;
+    }
+
+
+    .login-form .title h2 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .login-form .title p {
+        font-size: 14px;
+    }
+
+    .login-form form {
+        margin: 0 5px;
+    }
 }
