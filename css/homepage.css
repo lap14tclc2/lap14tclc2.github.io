@@ -11,6 +11,28 @@ body {
     background: #336699;
 }
 
+h3.title-text {
+    font-size: 30px !important;
+    color: #369;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+p.service-text {
+    color: #369;
+    font-size: 20px;    
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+p.service-text-detail {
+    color: lightgray;
+    font-size: 16px;    
+    text-align: start;
+}
+
 
 /*=============
     LAYOUT STYLE
@@ -226,21 +248,6 @@ ul.list-inline {
 
 }
 
-.service-component h3 {
-    font-size: 45px !important;
-}
-
-.service-component .service-text {
-    color: #369;
-    font-size: 30px;    
-    font-weight: 600;
-}
-
-.service-component .service-text-detail {
-    color: lightgray;
-    font-size: 18px;    
-    text-align: start;
-}
 
 .service-car {
     width: 100%;
