@@ -55,13 +55,13 @@ body{
 }
 
 
-.login-form {
+.signup-form {
     margin-top: 5em;
 }
 
 
 
-.login-form  form input[type="text"] {
+.signup-form  form input[type="text"] {
     border: none;
     border-bottom: 1px solid black;
     border-radius: 0;
@@ -69,7 +69,7 @@ body{
     margin: 10px 0;
 }
 
-.login-form  form > button {
+.signup-form  form > button {
     width: 100%;
     padding: 10px 0;
 }
@@ -90,21 +90,21 @@ body{
         left: 25%;
     }
 
-    .login-form .title {
+    .signup-form .title {
         margin: 50px 5px;
     }
 
 
-    .login-form .title h2 {
+    .signup-form .title h2 {
         font-size: 18px;
         font-weight: 600;
     }
 
-    .login-form .title p {
+    .signup-form .title p {
         font-size: 14px;
     }
 
-    .login-form form {
+    .signup-form form {
         margin: 0 5px;
     }
 }
