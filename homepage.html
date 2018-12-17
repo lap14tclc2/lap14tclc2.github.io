@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/homepage.css">
+</head>
+
+<body>
+    <!-- Navbar component-->
+    <nav class="navbar navbar-fixed-top main-navbar">
+        <div class="container-fluid">
+            <ul class="nav nav-pills">
+                <li class="navbar-header">
+                    <div class="navbar-brand">
+                        <img class="logo" src="img/logo.png" alt="">
+                    </div>
+                </li>
+
+                <li role="presentation" class="dropdown dropdown-address">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                        aria-expanded="false">
+                        <span class="glyphicon glyphicon-map-marker"></span>TP HỒ CHÍ MINH
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">TP ĐÀ NẴNG</a></li>
+                        <li><a href="#">TP HỒ CHÍ MINH</a></li>
+                        <li><a href="#">TP CẦN THƠ</a></li>
+                    </ul>
+                </li>
+
+                <li class="navbar-right dropdown-link">
+                    <button class="navbar-right vertical-link"><a><span class="glyphicon glyphicon-menu-hamburger"></span></a></button>
+                    <ul class="menu-list">
+                        <li class="login-link navbar-right"><a href="#">Đăng nhập</a></li>
+                        <li class="navbar-right"><a href="#">Đăng tin</a></li>
+                        <li class="navbar-right"><a href="#">Đánh giá xe</a></li>
+                        <li class="navbar-right"><a href="#">So sánh xe</a></li>
+                        <li class="home-link navbar-right"><a href="#">Trang chủ</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- SEARCH COMPONENT -->
+    <div class="search-component">
+        <div class="row">
+            <!-- First row-->
+            <div class="col-md-10 col-md-offset-1 ">
+                <div class="col-md-12 col-lg-12">
+                    <div class="col-md-5 col-lg-4 col-xs-12 price-column">
+                        <div class="column">
+                            <p class="ptitle">tìm theo giá</p>
+                            <ul class="list-inline price">
+                                <li class="list-inline-item">dưới 200 tr</li>
+                                <li class="list-inline-item">200 tr - 400 tr
+                                </li>
+                                <li class="list-inline-item">400 tr - 600 tr</li>
+                            </ul>
+                            <ul class="list-inline price price-second">
+                                <li class="list-inline-item">600tr - 1 tỷ</li>
+                                <li class="list-inline-item">1 tỷ - 1.5 tỷ</li>
+                                <li class="list-inline-item"> 1.5 tỷ</li>
+                            </ul>
+                            <div class="padding-div"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5 col-lg-4 col-xs-12  car-column">
+                        <div class="column">
+                            <p class="ptitle">tìm theo hãng xe</p>
+                            <ul class="list-inline car">
+                                <li><img src="img/madza.jpg" alt=""></li>
+                                <li><img src="img/honda.png" alt=""></li>
+                                <li><img src="img/hyundai.jpg" alt=""></li>
+                                <li><img src="img/lexus.jpg" alt=""></li>
+                            </ul>
+
+                            <ul class="list-inline car">
+                                <li><img src="img/ford.png" alt=""></li>
+                                <li><img src="img/chervolet.jpg" alt=""></li>
+                                <li><img src="img/merc.png" alt=""></li>
+                                <li><img src="img/toyota.png" alt=""></li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 col-lg-4 col-xs-12 year-column">
+                        <div class="column">
+                            <p class="ptitle">năm</p>
+                            <ul class="list-group year">
+                                <li class="list-inline-item">2016</li>
+                                <li class="list-inline-item">2015</li>
+                                <li class="list-inline-item">2014</li>
+                                <li class="list-inline-item">trước 2013</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row ">
+            <!-- Second rows-->
+            <div class="col-md-10 col-md-offset-1">
+                <div class="col-md-12 col-lg-12">
+                    <div class="col-md-6 col-xs-12 col-lg-6 car-type-row">
+                        <img src="img/family_car.jpg" alt="">
+                        <p class="ptitle">Xe dùng cho gia đình</p>
+                    </div>
+                    <div class="col-md-6 col-xs-12  col-lg-6 car-type-row">
+                        <img src="img/business_car.jpg" alt="">
+                        <p class="ptitle">Xe cho doanh nghiệp</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Third rows-->
+            <div class="col-md-10 col-md-offset-1">
+                <div class="col-md-12 col-lg-12">
+                    <div class="col-md-4 col-xs-12  col-lg-4 car-for-purpose">
+                        <img src="img/car1.jpg" alt="">
+                        <p class="ptitle">Xe dùng đi lại</p>
+                    </div>
+                    <div class="col-md-4 col-xs-12  col-lg-4 car-for-purpose">
+                        <img src="img/car1.jpg" alt="">
+                        <p class="ptitle">Xe dùng du lịch</p>
+                    </div>
+                    <div class="col-md-4 col-xs-12  col-lg-4 car-for-purpose">
+                        <img src="img/car3.jpg" alt="">
+                        <p class="ptitle">Xe chạy dịch vụ</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2 col-md-offset-5 col-xs-8 col-xs-offset-3">
+                <button class="button">tìm xe phù hợp</button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- SERVICE COMPONENT -->
+    <div class="service-component">
+        <div class="row">
+            <h3 class="title-text">Dịch vụ</h3>
+
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="col-md-12 col-lg-12">
+                        <div class="col-md-6 col-xs-12 col-lg-6 car-type-row">
+                            <img src="img/verify_car.jpg" alt="">
+                            <p class="service-text">Xe được xác nhận kiểm tra</p>
+                            <p class="service-text-detail">Tất cả đều được xác nhận thông tin</p>
+                        </div>
+                        <div class="col-md-6 col-xs-12 col-lg-6  car-type-row">
+                            <img src="img/verify_car_2.jpg" alt="">
+                            <p class="service-text">Xe được xác nhận kiểm tra</p>
+                            <p class="service-text-detail">Đội ngũ lành nghề sẽ giúp bạn kiểm tra xác thực tình trạng
+                                xe</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------- USAGE COMPONENT------------->
+
+    <div class="service-component">
+        <div class="row">
+            <h3 class="title-text">Sử dụng đơn giản</h3>
+
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="col-md-12 col-lg-12">
+                        <div class="col-md-3 col-xs-12 col-lg-3 car-type-row">
+                            <img src="img/find_car_log.jpg" alt="">
+                            <p class="service-text">Tìm xe dễ dàng</p>
+                            <p class="service-text-detail">Dễ dàng tìm kiếm xe phù hợp với nhu cầu sử dụng của bạn</p>
+                        </div>
+                        <div class="col-md-3 col-xs-12 col-lg-3 car-type-row">
+                            <img src="img/compare_car.jpg" alt="">
+                            <p class="service-text">So sánh xe</p>
+                            <p class="service-text-detail">So sánh chức năng và giá cả để chọn được xe đáng tiền nhất</p>
+                        </div>
+                        <div class="col-md-3 col-xs-12 col-lg-3 car-type-row">
+                            <img src="img/machinist_car.jpg" alt="">
+                            <p class="service-text">Thợ kiểm tra</p>
+                            <p class="service-text-detail">Xe đựoc kiểm tra bởi thợ có kinh nghiệm</p>
+                        </div>
+                        <div class="col-md-3 col-xs-12 col-lg-3 car-type-row">
+                            <img src="img/best_price_car.jpg" alt="">
+                            <p class="service-text">Giá tốt nhất</p>
+                            <p class="service-text-detail">Mua xe giá tốt phù hợp giá trị của xe</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------SHOWROOM COMPONENT----------------->
+    <div class="showroom-component">
+        <div class="row">
+            <h3 class="title-text">SHOWROOM GẦN BẠN</h3>
+        </div>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="col-md-12 col-lg-12">
+                    <div class="col-md-3 col-xs-12 col-lg-3 car-type-row">
+                        <img src="img/kia_showroom.jpg" alt="">
+                        <p class="service-text">KIA Đà Nẵng</p>
+                    </div>
+                    <div class="col-md-3 col-xs-12 col-lg-3 car-type-row">
+                        <img src="img/nissan_showroom.jpg" alt="">
+                        <p class="service-text">NISSAN Đà Nẵng</p>
+                    </div>
+                    <div class="col-md-3 col-xs-12 col-lg-3 car-type-row">
+                        <img src="img/honda.png" alt="">
+                        <p class="service-text">HONDA Đà Nẵng</p>
+                    </div>
+                    <div class="col-md-3 col-xs-12 col-lg-3 car-type-row">
+                        <img src="img/ford_showroom.jpg" alt="">
+                        <p class="service-text">Ford Đà Nẵng</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------SPACING---------------------->
+    <div class="gray-spacing"></div>
+
+    <div class="main-footer">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="col-md-12 col-lg-12">
+                    <div class="col-md-3 col-xs-12 col-lg-3 car-type-row">
+                        <h3>Liên kết</h3>
+                        <ul>
+                            <li><i class="fa fa-facebook-official"></i> Facebook</li>
+                            <li><i class="fa fa-google-plus-circle"></i>Google+</li>
+                            <li><i class="fa fa-twitter"></i>Twitter</li>
+                            <li><i class="fa fa-youtube"></i>Youtube</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-xs-12 col-lg-3 car-type-row">
+                        <h3>Hỗ trợ khách hàng</h3>
+                        <ul>
+                            <li>Trung tâm trợ giúp</li>
+                            <li>An toàn mua bán</li>
+                            <li>Quy định cần biết</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-xs-12 col-lg-3 car-type-row">
+                        <h3>Về muaxedi.com</h3>
+                        <ul>
+                            <li>Giới thiệu</li>
+                            <li>Tuyển dụng</li>
+                            <li>Truyền thông</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-xs-12 col-lg-3 car-type-row">
+                        <h3>Chứng nhận</h3>
+                        <ul>
+                            <li>Term of Service</li>
+                            <li>Term of Use</li>
+                            <li>Privacy Policy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
