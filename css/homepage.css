@@ -10,6 +10,8 @@ body {
     font-family: 'Times New Roman', Times, serif;
     background: #336699;
 }
+
+
 /*=============
     LAYOUT STYLE
 ===============*/
@@ -216,6 +218,40 @@ ul.list-inline {
     margin: 20px 0;
 }
 
+/*--------------- SERVICE COMPONENT--------------*/
+.service-component {
+    background: #fbf9fa;
+    margin: 10px 0;
+    text-align: center;
+
+}
+
+.service-component h3 {
+    font-size: 45px !important;
+}
+
+.service-component .service-text {
+    color: #369;
+    font-size: 30px;    
+    font-weight: 600;
+}
+
+.service-component .service-text-detail {
+    color: lightgray;
+    font-size: 18px;    
+    text-align: start;
+}
+
+.service-car {
+    width: 100%;
+    padding:  0 15px;
+}
+
+.service-component .car-type-row {
+    padding: 0 25px;
+    max-height: 320px;
+}
+
 /*===== CLEAR FLOAT=========*/
 .clearfix{
     clear: both;
@@ -255,14 +291,21 @@ ul.list-inline {
     .button {
         max-width: 80%;
     }
+
+    .service-component .service-text {
+        font-size: 20px;    
+    }
+
+    .service-component .service-text-detail {
+        font-size: 14px;    
+    }
 }
 
-@media(min-width: 780px) and (max-width:1279px){
+@media(min-width: 960px) and (max-width:1279px){
     
     li.list-inline-item {
         font-size: 0.9em;
         word-spacing: -1px;
         padding: 0;
     }
-
 }
