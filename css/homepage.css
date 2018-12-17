@@ -259,6 +259,27 @@ ul.list-inline {
     max-height: 320px;
 }
 
+/*------------SHOWROOM COMPONENT*/
+.showroom-component {
+    background: #369;
+    text-align: center;
+}
+
+.showroom-component h3.title-text,
+.showroom-component p.service-text {
+    color: #fff;
+}
+
+.showroom-component .car-type-row {
+    max-height: 250px;
+}
+
+.showroom-component .car-type-row img {
+    max-height: 180px;
+}
+
+
+
 /*===== CLEAR FLOAT=========*/
 .clearfix{
     clear: both;
@@ -306,9 +327,21 @@ ul.list-inline {
     .service-component .service-text-detail {
         font-size: 14px;    
     }
+
+    .showroom-component img {
+        max-width: 80%;
+    }
+
+    .showroom-component h3.title-text {
+        font-size: 25px !important;
+    }
+
+    .showroom-component p.service-text {
+        font-size: 16px;
+    }
 }
 
-@media(min-width: 960px) and (max-width:1279px){
+@media(min-width: 960px) and (max-width:1600px){
     
     li.list-inline-item {
         font-size: 0.9em;
