@@ -5,6 +5,10 @@
 /*==============
     ELEMENT STYLE
 ===============*/
+html {
+    padding: 0;
+    margin: 0;
+}
 
 body {
     font-family: 'Times New Roman', Times, serif;
@@ -248,7 +252,6 @@ ul.list-inline {
 
 }
 
-
 .service-car {
     width: 100%;
     padding:  0 15px;
@@ -278,7 +281,24 @@ ul.list-inline {
     max-height: 180px;
 }
 
+/*----------- SPACING-------------*/
+.gray-spacing {
+    height: 50px;
+    width: 100%;
+    background-color: silver;
+}
 
+
+/*----------MAIN FOOTER-----------*/
+
+.main-footer {
+    background: #fbf9fa;
+    font-size: 16px;
+}
+
+.main-footer h3 {
+    font-weight: 700;
+}
 
 /*===== CLEAR FLOAT=========*/
 .clearfix{
@@ -338,6 +358,15 @@ ul.list-inline {
 
     .showroom-component p.service-text {
         font-size: 16px;
+    }
+    
+    .main-footer {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .main-footer h3 {
+        font-size: 17px;
     }
 }
 
