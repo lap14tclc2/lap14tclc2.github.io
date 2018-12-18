@@ -339,16 +339,16 @@ ul.list-inline {
     .main-navbar .menu-list {
         display: none;
         position: absolute;
-        top: 3.2em;
-        left: 1.7em;
+        top: 2em;
+        left: 0;
         z-index: 1;
     }
 
     .main-navbar button.vertical-link {
         display: flex !important;
         font-size: 20px;
-        width: 150px;
-        height: 50px;
+        width: 120px;
+        max-height: 50px;
         border: 1px solid lightgray;
         color: lightgray;
         justify-content: center;
@@ -367,9 +367,12 @@ ul.list-inline {
         color: #111;
     }
 
-    .main-navbar .dropdown-link:hover .menu-list {
+    .main-navbar .dropdown-link:hover .menu-list,
+    .main-navbar .dropdown-link:focus .menu-list
+    {
         display: block;
     }
+    
 
     .main-navbar .dropdown-link:hover .menu-list li {
         width: 120px;
@@ -378,10 +381,7 @@ ul.list-inline {
         color: white;
     }
 
-    .main-navbar .dropdown-link:hover .menu-list li:hover {
-        background: #111;
-        color: #fff;
-    }
+
 
     .price-column,
     .year-column,
