@@ -373,15 +373,12 @@ ul.list-inline {
         display: block;
     }
     
-
     .main-navbar .dropdown-link:hover .menu-list li {
         width: 120px;
         max-height: 40px;
         background: #369;
         color: white;
     }
-
-
 
     .price-column,
     .year-column,
