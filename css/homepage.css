@@ -32,15 +32,25 @@ p.service-text {
 
 p.service-text-detail {
     color: lightgray;
-    font-size: 16px;    
+    font-size: 13px;    
     text-align: start;
 }
 
+img {
+    transition: .5s;
+}
+
+img:hover,
+img:focus  {
+    transform: scale(0.95);
+}
 
 /*=============
     LAYOUT STYLE
 ===============*/
-
+.row {
+    margin: 0;
+}
 
 /* --------- NAVBAR STYLE-------------- */
 .main-navbar {
@@ -150,6 +160,12 @@ div.car-column {
     margin-top: 20px;   
 }
 
+div.year-column .list-inline-item a,
+div.price-column ul.list-inline a {
+    text-decoration: none;
+    color: #111;
+}
+
 .equal {
     display: -webkit-box;
     display: -webkit-flex;
@@ -209,6 +225,15 @@ ul.list-inline {
     width: 50px;
     height: 50px;
     margin-top: 10px;
+}
+
+.car > li {
+    transition: 0.5s;
+}
+
+.car > li img:hover,
+.car > li img:focus  {
+    transform: scale(1.2);
 }
 
 /*------search by year------------*/
@@ -281,11 +306,21 @@ ul.list-inline {
 }
 
 .service-component .car-type-row {
+<<<<<<< HEAD
+    padding: 0 25px;
+    height: 320px;
+}
+
+.service-component .car-type-row img {
+    padding: 0 25px;
+    height: 130px;
+=======
     height: 180px;
 }
 
 .service-component .car-type-row img {
     height: 100px;
+>>>>>>> f2cdf92d030dcc3265b4b9df4e6eb8afa6d2aa5f
 }
 
 /*------------SHOWROOM COMPONENT*/
@@ -303,11 +338,14 @@ ul.list-inline {
 
 .showroom-component .car-type-row {
     height: 250px;
+<<<<<<< HEAD
+=======
 }
 
 .showroom-component .col-md-3,
 .showroom-component .col-lg-3 {
     padding: 0;
+>>>>>>> f2cdf92d030dcc3265b4b9df4e6eb8afa6d2aa5f
 }
 
 
@@ -348,7 +386,11 @@ ul.list-inline {
 /* =======
     RESPONSIVE
 ==========*/
+<<<<<<< HEAD
+@media only screen and (min-device-width: 320px) and (max-device-width: 720px) {
+=======
 @media(min-width: 280px) and (max-width: 1080px){
+>>>>>>> f2cdf92d030dcc3265b4b9df4e6eb8afa6d2aa5f
 
     .main-navbar .logo {
         width: 200px;
@@ -361,6 +403,10 @@ ul.list-inline {
 
     li.dropdown-address{
         display: none;
+    }
+
+    .navbar-right {
+        margin-right: 0;
     }
 
     .main-navbar .menu-list {
@@ -381,9 +427,13 @@ ul.list-inline {
     }
 
     .main-navbar .dropdown-link {
+<<<<<<< HEAD
+        float: right;
+=======
         display: flex;
         justify-content: right;
         margin-bottom: 10px;
+>>>>>>> f2cdf92d030dcc3265b4b9df4e6eb8afa6d2aa5f
     }
     
     .main-navbar .dropdown-link:hover #button-menu {
@@ -403,9 +453,22 @@ ul.list-inline {
     .main-navbar .dropdown-link:hover .menu-list li {
         width: 120px;
         max-height: 40px;
+<<<<<<< HEAD
+        background: #369;
+=======
         background: #111;
         color: white;
+>>>>>>> f2cdf92d030dcc3265b4b9df4e6eb8afa6d2aa5f
     }
+
+    .main-navbar .dropdown-link:hover .menu-list li a {
+        text-decoration: none;
+        color: #fff !important;
+    }
+    .main-navbar .dropdown-link:hover .menu-list li a:active {
+        color: #111 !important;
+    }
+
 
     .price-column,
     .year-column,
