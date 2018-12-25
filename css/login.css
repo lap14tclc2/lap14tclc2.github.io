@@ -66,6 +66,7 @@ body{
     border-radius: 0;
     padding: 20px 0;
     margin: 10px 0;
+    box-shadow: none;
 }
 
 .login-form  form > button {
@@ -80,18 +81,34 @@ body{
 /* ==============
     MEDIA QUERIES
 =================*/
+<<<<<<< HEAD
 @media(min-device-width: 320px) and (max-device-width:720px){
 
     .background-img img {
         width: 100%;
         height: 500px;
+=======
+@media(min-width: 320px) and (max-width:1080px){
+
+    div.responsive-content,
+    div.background-img {
+        height: 100vh;
+    }
+
+    .signup-inform {
+        display: flex;
+        justify-content: center;
+>>>>>>> f2cdf92d030dcc3265b4b9df4e6eb8afa6d2aa5f
     }
 
     .signup-inform a {
         display: block;
-        width: 60%;
-        position: absolute;
-        left: 25%;
+        text-align: center;
+        margin-top: 1em;
+    }
+
+    .login-form .row {
+        padding-top: 10em;
     }
 
     .login-form .title {
@@ -100,15 +117,16 @@ body{
 
 
     .login-form .title h2 {
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 600;
     }
 
     .login-form .title p {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .login-form form {
         margin: 0 5px;
     }
 }
+

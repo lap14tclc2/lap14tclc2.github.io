@@ -12,14 +12,13 @@ html {
 
 body {
     font-family: 'Times New Roman', Times, serif;
-    background: #336699;
+    background: #369;
 }
 
 h3.title-text {
     font-size: 30px !important;
     color: #369;
     font-weight: 600;
-    text-transform: uppercase;
 }
 
 
@@ -74,7 +73,7 @@ img:focus  {
     left: 6em;
 }
 
-.main-navbar .dropdown-link button.vertical-link{
+.main-navbar .dropdown-link #button-menu {
     display: none;
 }
 
@@ -136,6 +135,14 @@ li.login-link a  {
 .search-component {
     background: #fbf9fa;
 }
+
+.search-component .row,
+.service-component .row,
+.showroom-component .row {
+    margin: 0;
+    padding: 0;
+}
+
 
 .row-margin-bottom {
     margin-bottom: 1.5em;
@@ -295,9 +302,11 @@ ul.list-inline {
 .service-car {
     width: 100%;
     padding:  0 15px;
+    min-height: 300px;
 }
 
 .service-component .car-type-row {
+<<<<<<< HEAD
     padding: 0 25px;
     height: 320px;
 }
@@ -305,22 +314,40 @@ ul.list-inline {
 .service-component .car-type-row img {
     padding: 0 25px;
     height: 130px;
+=======
+    height: 180px;
+}
+
+.service-component .car-type-row img {
+    height: 100px;
+>>>>>>> f2cdf92d030dcc3265b4b9df4e6eb8afa6d2aa5f
 }
 
 /*------------SHOWROOM COMPONENT*/
-.showroom-component {
-    background: #369;
+
+
+.showroom-component .row {
+    background: #fbf9fa;
     text-align: center;
 }
 
 .showroom-component h3.title-text,
 .showroom-component p.service-text {
-    color: #fff;
+    color: #111;
 }
 
 .showroom-component .car-type-row {
     height: 250px;
+<<<<<<< HEAD
+=======
 }
+
+.showroom-component .col-md-3,
+.showroom-component .col-lg-3 {
+    padding: 0;
+>>>>>>> f2cdf92d030dcc3265b4b9df4e6eb8afa6d2aa5f
+}
+
 
 .showroom-component .car-type-row img {
     height: 180px;
@@ -339,6 +366,10 @@ ul.list-inline {
 .main-footer {
     background: #fbf9fa;
     font-size: 16px;
+    border-top: 30px solid gray;
+}
+.main-footer .row {
+    margin: 0;
 }
 
 .main-footer h3 {
@@ -355,11 +386,19 @@ ul.list-inline {
 /* =======
     RESPONSIVE
 ==========*/
+<<<<<<< HEAD
 @media only screen and (min-device-width: 320px) and (max-device-width: 720px) {
+=======
+@media(min-width: 280px) and (max-width: 1080px){
+>>>>>>> f2cdf92d030dcc3265b4b9df4e6eb8afa6d2aa5f
 
     .main-navbar .logo {
         width: 200px;
         height: 100px;
+    }
+
+    .navbar-right {
+        margin-right: 0;
     }
 
     li.dropdown-address{
@@ -373,30 +412,35 @@ ul.list-inline {
     .main-navbar .menu-list {
         display: none;
         position: absolute;
-        top: 2em;
-        left: 0;
-        z-index: 1;
+        top: 3.5em;
+        right: -1em;
     }
 
-    .main-navbar button.vertical-link {
-        display: flex !important;
+    #button-menu {
+        display: block !important;
         font-size: 20px;
         width: 120px;
         max-height: 50px;
         border: 1px solid lightgray;
         color: lightgray;
-        justify-content: center;
+        padding: 10px;
     }
 
     .main-navbar .dropdown-link {
+<<<<<<< HEAD
         float: right;
+=======
+        display: flex;
+        justify-content: right;
+        margin-bottom: 10px;
+>>>>>>> f2cdf92d030dcc3265b4b9df4e6eb8afa6d2aa5f
     }
     
-    .main-navbar .dropdown-link:hover .vertical-link{
+    .main-navbar .dropdown-link:hover #button-menu {
         background:#369;
     }
 
-    .main-navbar .dropdown-link:hover .vertical-link a{
+    .main-navbar .dropdown-link:hover #button-menu  a{
         color: #111;
     }
 
@@ -409,7 +453,12 @@ ul.list-inline {
     .main-navbar .dropdown-link:hover .menu-list li {
         width: 120px;
         max-height: 40px;
+<<<<<<< HEAD
         background: #369;
+=======
+        background: #111;
+        color: white;
+>>>>>>> f2cdf92d030dcc3265b4b9df4e6eb8afa6d2aa5f
     }
 
     .main-navbar .dropdown-link:hover .menu-list li a {
