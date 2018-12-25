@@ -33,15 +33,25 @@ p.service-text {
 
 p.service-text-detail {
     color: lightgray;
-    font-size: 16px;    
+    font-size: 13px;    
     text-align: start;
 }
 
+img {
+    transition: .5s;
+}
+
+img:hover,
+img:focus  {
+    transform: scale(0.95);
+}
 
 /*=============
     LAYOUT STYLE
 ===============*/
-
+.row {
+    margin: 0;
+}
 
 /* --------- NAVBAR STYLE-------------- */
 .main-navbar {
@@ -143,6 +153,12 @@ div.car-column {
     margin-top: 20px;   
 }
 
+div.year-column .list-inline-item a,
+div.price-column ul.list-inline a {
+    text-decoration: none;
+    color: #111;
+}
+
 .equal {
     display: -webkit-box;
     display: -webkit-flex;
@@ -202,6 +218,15 @@ ul.list-inline {
     width: 50px;
     height: 50px;
     margin-top: 10px;
+}
+
+.car > li {
+    transition: 0.5s;
+}
+
+.car > li img:hover,
+.car > li img:focus  {
+    transform: scale(1.2);
 }
 
 /*------search by year------------*/
@@ -274,7 +299,12 @@ ul.list-inline {
 
 .service-component .car-type-row {
     padding: 0 25px;
-    max-height: 320px;
+    height: 320px;
+}
+
+.service-component .car-type-row img {
+    padding: 0 25px;
+    height: 130px;
 }
 
 /*------------SHOWROOM COMPONENT*/
@@ -289,11 +319,11 @@ ul.list-inline {
 }
 
 .showroom-component .car-type-row {
-    max-height: 250px;
+    height: 250px;
 }
 
 .showroom-component .car-type-row img {
-    max-height: 180px;
+    height: 180px;
 }
 
 /*----------- SPACING-------------*/
@@ -325,7 +355,7 @@ ul.list-inline {
 /* =======
     RESPONSIVE
 ==========*/
-@media(min-width: 320px) and (max-width: 960px){
+@media only screen and (min-device-width: 320px) and (max-device-width: 720px) {
 
     .main-navbar .logo {
         width: 200px;
@@ -334,6 +364,10 @@ ul.list-inline {
 
     li.dropdown-address{
         display: none;
+    }
+
+    .navbar-right {
+        margin-right: 0;
     }
 
     .main-navbar .menu-list {
@@ -355,8 +389,7 @@ ul.list-inline {
     }
 
     .main-navbar .dropdown-link {
-        position: relative;
-        left: 25%;
+        float: right;
     }
     
     .main-navbar .dropdown-link:hover .vertical-link{
@@ -377,8 +410,16 @@ ul.list-inline {
         width: 120px;
         max-height: 40px;
         background: #369;
-        color: white;
     }
+
+    .main-navbar .dropdown-link:hover .menu-list li a {
+        text-decoration: none;
+        color: #fff !important;
+    }
+    .main-navbar .dropdown-link:hover .menu-list li a:active {
+        color: #111 !important;
+    }
+
 
     .price-column,
     .year-column,
