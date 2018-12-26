@@ -386,11 +386,8 @@ ul.list-inline {
 /* =======
     RESPONSIVE
 ==========*/
-<<<<<<< HEAD
 @media only screen and (min-device-width: 320px) and (max-device-width: 720px) {
-=======
-@media(min-width: 280px) and (max-width: 1080px){
->>>>>>> f2cdf92d030dcc3265b4b9df4e6eb8afa6d2aa5f
+
 
     .main-navbar .logo {
         width: 200px;
@@ -427,13 +424,10 @@ ul.list-inline {
     }
 
     .main-navbar .dropdown-link {
-<<<<<<< HEAD
         float: right;
-=======
         display: flex;
         justify-content: right;
         margin-bottom: 10px;
->>>>>>> f2cdf92d030dcc3265b4b9df4e6eb8afa6d2aa5f
     }
     
     .main-navbar .dropdown-link:hover #button-menu {
@@ -453,12 +447,8 @@ ul.list-inline {
     .main-navbar .dropdown-link:hover .menu-list li {
         width: 120px;
         max-height: 40px;
-<<<<<<< HEAD
         background: #369;
-=======
-        background: #111;
         color: white;
->>>>>>> f2cdf92d030dcc3265b4b9df4e6eb8afa6d2aa5f
     }
 
     .main-navbar .dropdown-link:hover .menu-list li a {
@@ -526,14 +516,5 @@ ul.list-inline {
 
     .main-footer h3 {
         font-size: 17px;
-    }
-}
-
-@media(min-width: 960px) and (max-width:1600px){
-    
-    li.list-inline-item {
-        font-size: 0.9em;
-        word-spacing: -1px;
-        padding: 0;
     }
 }
