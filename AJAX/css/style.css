@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+}
+
+.navbar-inverse {
+    background-color: tomato;
+}
+
+.navbar-inverse .navbar-brand {
+    text-transform: uppercase;
+    word-spacing: 2px;
+    color: ghostwhite;
+}
+
+.searchContainer {
+    margin-top: 100px;
+}
+
+#profile {
+    display: none;
+}
+
+.panel-body {
+    font-size: 18px;
+}
+
+img.img-profile {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.list-group {
+    width: 90%;
+}
+
+.btn-info {
+    width: 200px;
+    text-align: center;
+}
+
+
+#repos {
+    display: none;
+}
+
+#repos .panel-body{
+    font-size: 14px;
+}
+#repo .repo-name {
+    font-weight: bold;
+}
