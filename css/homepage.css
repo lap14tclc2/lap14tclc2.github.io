@@ -306,7 +306,6 @@ ul.list-inline {
 }
 
 .service-component .car-type-row {
-<<<<<<< HEAD
     padding: 0 25px;
     height: 320px;
 }
@@ -314,13 +313,11 @@ ul.list-inline {
 .service-component .car-type-row img {
     padding: 0 25px;
     height: 130px;
-=======
     height: 180px;
 }
 
 .service-component .car-type-row img {
     height: 100px;
->>>>>>> f2cdf92d030dcc3265b4b9df4e6eb8afa6d2aa5f
 }
 
 /*------------SHOWROOM COMPONENT*/
@@ -338,14 +335,11 @@ ul.list-inline {
 
 .showroom-component .car-type-row {
     height: 250px;
-<<<<<<< HEAD
-=======
 }
 
 .showroom-component .col-md-3,
 .showroom-component .col-lg-3 {
     padding: 0;
->>>>>>> f2cdf92d030dcc3265b4b9df4e6eb8afa6d2aa5f
 }
 
 
@@ -387,8 +381,6 @@ ul.list-inline {
     RESPONSIVE
 ==========*/
 @media only screen and (min-device-width: 320px) and (max-device-width: 720px) {
-
-
     .main-navbar .logo {
         width: 200px;
         height: 100px;
@@ -476,6 +468,7 @@ ul.list-inline {
         word-spacing: -1px;
     }
 
+
     .year-column, 
     .car-column {
         display: none;
@@ -516,5 +509,12 @@ ul.list-inline {
 
     .main-footer h3 {
         font-size: 17px;
+    }
+}
+
+
+@media screen and (min-device-width: 721px) and (max-device-width: 1300px){
+    .list-inline-item {
+        font-size: 10px;
     }
 }
