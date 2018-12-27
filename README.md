@@ -6,6 +6,7 @@ Link dowload Jquery: https://jquery.com/download/
 II/ About demo
 
 1/ HTML and CSS demo
+...
 Create there pages include:
 1.1 Login page and Sign up 
 + Responsive layout is not good in mobile device
