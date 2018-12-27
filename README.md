@@ -24,3 +24,7 @@ Create there pages include:
 2. AJAX demo using JQuery: get user profile of Github user using Github's API
 + Having a mistake because i didn't validate username text field
 + Write HTML code in function's Ajax
+
+
+3. Ruby
+3.1 Exercise: link to exercise at: https://rubymonk.com/learning/
