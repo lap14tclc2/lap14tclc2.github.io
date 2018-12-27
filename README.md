@@ -1,9 +1,9 @@
 # lap14tclc2.github.io
-I/ Library has used: 
+I. Library has used: 
 Link download Bootstrap: https://getbootstrap.com/docs/4.1/getting-started/download/
 Link dowload Jquery: https://jquery.com/download/
 
-II/ About demo
+II. About demo
 
 1. HTML and CSS demo
 Create there pages include:
@@ -22,5 +22,5 @@ Create there pages include:
 + Naming CSS class makes confused to reader.
 
 2. AJAX demo using JQuery: get user profile of Github user using Github's API
-- Having a mistake because i didn't validate username text field
-- Write HTML code in function's Ajax
++ Having a mistake because i didn't validate username text field
++ Write HTML code in function's Ajax
