@@ -6,15 +6,15 @@ Link dowload Jquery: https://jquery.com/download/
 II/ About demo
 1/ HTML and CSS demo
 Create there pages include:
-- Login page and Sign up 
+1.1 Login page and Sign up 
 + Responsive layout is not good in mobile device
 ...
-- Homepage
+1.2 Homepage
 + Responsive layout hasn't completed 
 + Use div tag to create space 
 + UX is bad...
 
-* Common mistakes:
+1.3 Common mistakes:
 + Commit not clear
 + Naming CSS class makes confused to reader.
 
