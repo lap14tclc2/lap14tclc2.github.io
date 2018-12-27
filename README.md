@@ -8,18 +8,18 @@ II. About demo
 1. HTML and CSS demo
 Create there pages include:
 
-1.1 Login page and Sign up 
-+ Responsive layout is not good in mobile device
+    1.1 Login page and Sign up 
+    + Responsive layout is not good in mobile device
 
 
-1.2 Homepage
-+ Responsive layout hasn't completed 
-+ Use div tag to create space 
-+ UX is bad...
+    1.2 Homepage
+    + Responsive layout hasn't completed 
+    + Use div tag to create space 
+    + UX is bad...
 
-1.3 Common mistakes:
-+ Commit not clear
-+ Naming CSS class makes confused to reader.
+    1.3 Common mistakes:
+    + Commit not clear
+    + Naming CSS class makes confused to reader.
 
 2. AJAX demo using JQuery: get user profile of Github user using Github's API
 + Having a mistake because i didn't validate username text field
