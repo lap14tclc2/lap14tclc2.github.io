@@ -27,4 +27,4 @@ Create there pages include:
 
 
 3. Ruby
-3.1 Exercise: link to exercise at: https://rubymonk.com/learning/
+3.1 Exercise: link to exercise at: https://rubymonk.com/learning/books/1-ruby-primer
