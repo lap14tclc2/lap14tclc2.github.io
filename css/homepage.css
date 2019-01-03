@@ -1,0 +1,268 @@
+* {
+    box-sizing: border-box;
+}
+
+/*==============
+    ELEMENT STYLE
+===============*/
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: #336699;
+}
+/*=============
+    LAYOUT STYLE
+===============*/
+
+
+/* --------- NAVBAR STYLE-------------- */
+.main-navbar {
+    background: #336699;
+    position: relative;
+}
+
+.main-navbar .logo {
+    width: 70px;
+    max-height: 40px;
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+}
+
+.dropdown-address {
+    background-color: white;
+    position: absolute;
+    top: 5px;
+    left: 6em;
+}
+
+.main-navbar .dropdown-address > a {
+    color: black;
+}
+
+.dropdown-address > a span {
+    margin:0 10px;
+}
+
+.main-navbar  a:hover {
+    color: white !important; 
+    background-color: orange !important;
+}
+
+.dropdown-address .dropdown-menu  {
+    width: 100%;
+}
+
+.navbar-right {
+    margin-top: 5px;
+}
+
+li.navbar-right a {
+    color: white;
+    font-size: 1.1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li.navbar-right a:hover {
+    background-color: orange;
+    color: black;
+}
+
+li.home-link a {
+    color: orange;
+}
+
+li.login-link a {
+    background: orange;
+    color: white;
+    margin-right: 4em;
+}
+
+/*----------- SEARCH COMPONENT ------------*/
+.search-component {
+    background: #fbf9fa;
+}
+
+.row-margin-bottom {
+    margin-bottom: 1.5em;
+}
+
+.container .row {
+    padding: 0;
+    margin: 0;
+}
+
+div.year-column,
+div.price-column,
+div.car-column {
+    height: 200px;
+    margin-top: 20px;   
+}
+
+.equal {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+}
+
+.column {
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
+.ptitle {
+    text-transform: uppercase;
+    width: 100%;
+    background: #336699;
+    padding: 7px 0;
+    color: white;
+    text-align: center;
+}
+
+
+
+ /*---- search by price------- */
+.price {
+    display: flex;
+    justify-content: center;
+}
+
+ul.list-inline {
+    margin-left: 0;
+    padding: 0;
+    line-height: 2.5em;
+}
+
+
+.list-inline-item {
+    padding: 6px 0 ;
+    border: 1px solid black;
+    width: 25%;
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 1px 2px;
+    margin: 10px 10px;
+}
+
+.padding-div{
+    padding-bottom: 20px;
+}
+/*---- search by car logo-------*/
+.car {
+    display: flex;
+    justify-content: center;
+}
+.car > li img {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+/*------search by year------------*/
+
+.year {
+    text-align: center;
+}
+
+.year li {
+    width: 50%;
+    margin: 10px auto;
+    max-height: 30px;
+}
+
+/* ------- search by car's type------------*/
+.car-type-row {
+    max-height: 200px;
+    margin: 20px 0;
+}
+
+.car-type-row img {
+    width: 100%;
+    max-height: 180px;
+}
+
+.car-type-row p.ptitle {
+    width: 100%;
+}
+
+/*----------- search car for using purpose--------*/
+.car-for-purpose {
+    max-height: 200px;
+    padding:  0 15px;
+    margin:0 ;
+}
+
+.car-for-purpose img {
+    max-height: 160px;
+    width: 100%;
+}
+
+.car-for-purpose p.ptitle{
+    width: 100%;
+}
+
+
+.button {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: white;
+    background: orange;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 1px 2px black;
+    margin: 20px 0;
+}
+
+/*===== CLEAR FLOAT=========*/
+.clearfix{
+    clear: both;
+    display: block;
+}
+
+
+/* =======
+    RESPONSIVE
+==========*/
+@media(min-width: 320px) and (max-width: 960px){
+    .price-column,
+    .year-column,
+    .car-column,
+    .car-type-row {
+        margin: 0.5em 0;
+    }
+
+    .car-type-row {
+        margin: 10px 0;
+    }
+
+    .price-column {
+        font-size: 10px;
+        word-spacing: -1px;
+    }
+
+    .year-column, 
+    .car-column {
+        display: none;
+    }
+
+    .second-row .type-car {
+        padding-bottom: 2em;
+    }
+
+    .button {
+        max-width: 80%;
+    }
+}
+
+@media(min-width: 780px) and (max-width:1279px){
+    
+    li.list-inline-item {
+        font-size: 0.9em;
+        word-spacing: -1px;
+        padding: 0;
+    }
+
+}
