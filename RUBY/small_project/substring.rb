@@ -8,6 +8,7 @@ def substring(string, dictionary)
     #replace all of special character in string to space and convert string to array
     string.gsub!(/[^a-zA-Z]/, ' ')
     arr = string.split(' ')
+    p arr
 
     record = Hash.new
     for dict_word in dictionary 

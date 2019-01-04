@@ -34,4 +34,4 @@ def ceaser_cipher(string, fixed_number)
     end 
     ciphered_string
 end
-puts ceaser_cipher("What a string!", 5)
+puts ceaser_cipher("WHAT A STRING", 5)

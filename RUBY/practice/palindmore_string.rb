@@ -3,4 +3,4 @@ def palindmore(string)
     str.reverse.downcase == str.downcase
 end 
 
-palindmore("Never odd or even")
+p palindmore("Never odd or even")
