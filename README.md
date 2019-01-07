@@ -28,11 +28,11 @@ Create there pages include:
 
 3. Ruby
 3.1 Exercise: link to exercise at: https://rubymonk.com/learning/books/1-ruby-primer
-3.2 Ruby gem
-3.2.1 List steps to create a gem:
+3.2. Ruby gem
+3.2.1. List steps to create a gem:
 + create xxx.gemspec and 'lib' folder that includes ruby file
 + build xxx.gemspec, after that, the  first version of your gem is created
 + install that first version
-3.2.2 Some problems
+3.2.2. Some problems
 + Writing test to check type of method's argument haven't solved
 
