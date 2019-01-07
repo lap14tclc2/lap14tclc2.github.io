@@ -37,6 +37,7 @@ Create there pages include:
 + create xxx.gemspec and 'lib' folder that includes ruby file
 + build xxx.gemspec, after that, the  first version of your gem is created
 + install that first version
++ referenced link: https://guides.rubygems.org/make-your-own-gem/
 
 3.2.2. Some problems
 
