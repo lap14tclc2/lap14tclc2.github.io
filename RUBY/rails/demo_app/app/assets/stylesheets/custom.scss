@@ -62,3 +62,12 @@ footer {
         }
     }
 }
+
+/* error explain */
+#error_explanation {
+    color: red;
+    ul {
+        color: red;
+        margin: 0 0 3px 0;
+    }
+}
