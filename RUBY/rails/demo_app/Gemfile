@@ -5,6 +5,21 @@ ruby '2.5.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.2'
+# use bootstrap
+gem 'bootstrap-sass', '~> 3.4.0'
+# use jquery
+gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
+gem 'rails-ujs', '~> 0.1.0'
+
+# fake data
+gem 'faker'
+#using color on window
+gem "win32console"
+
+#pagination
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
+
 # Use mysql as the database for Active Record
 gem 'mysql2', '>= 0.4.4', '< 0.6.0'
 # Use Puma as the app server
@@ -24,7 +39,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -51,6 +66,11 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
+  gem 'minitest-reporters'
+  gem 'minitest'
+  gem 'guard'
+  gem 'guard-minitest'
+  gem 'rails-controller-testing'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
