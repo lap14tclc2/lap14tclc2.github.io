@@ -84,3 +84,21 @@ label.error {
     font-style: italic;
     margin-left: 20px;
 }
+
+
+/* profile page*/
+
+.container {
+    padding-top: 5%;
+}
+
+.container .img{
+    text-align:center;
+}
+.container .details{
+    border-left:3px solid #ded4da;
+}
+.container .details p{
+    font-size:15px;
+    font-weight:bold;
+}
