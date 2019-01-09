@@ -71,3 +71,16 @@ footer {
         margin: 0 0 3px 0;
     }
 }
+
+
+/* form */
+
+input {
+    margin: 10px 0;
+}
+
+label.error {
+    color: red;
+    font-style: italic;
+    margin-left: 20px;
+}
