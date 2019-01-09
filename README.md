@@ -43,3 +43,12 @@ Create there pages include:
 
 + Writing test to check type of method's argument haven't solved
 
+3.3. Rails
+
+3.3.1. Setting
++ Create a project using MySQL command: "rails new PROJECT_NAME -d mysql"
++ In config/database.yml: fill the sql native password
++ Run server: rails server/ rails s
+
+
+
