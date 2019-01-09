@@ -102,3 +102,34 @@ label.error {
     font-size:15px;
     font-weight:bold;
 }
+
+/* login page*/
+.login {
+    h1 {
+        text-align: center;
+    }
+
+    padding: 20px 0;
+        .col-md-6 {
+            padding: 20px 0;
+            border: 1px solid #111;
+
+            h1 {
+            margin-bottom: 10px ;
+            text-align: center;
+            }
+
+            form {
+                padding: 120px 50px;
+                input[type=submit] {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+
+            p.signup-link {
+                padding-top: 20px;
+                text-align: center;
+            }
+        }
+}
