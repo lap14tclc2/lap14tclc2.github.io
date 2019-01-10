@@ -12,6 +12,12 @@
         </blockquote>
         <p>
             Email: <%= @user.email %> <br>
+            <% if @user.admin %>
+            Role: Admin
+            <% else%>
+            Role: User 
+            <% end %>
+            <br>
             Created at: <%= @user.created_at %>
         </p>
     </div>
