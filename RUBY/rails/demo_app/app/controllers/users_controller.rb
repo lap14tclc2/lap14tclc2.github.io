@@ -70,6 +70,8 @@ class UsersController < ApplicationController
   def logged_user_in
     # if user haven't logged in then forcing user must log in
     unless logged_in?
+      # save current url to forward if user log in later
+      store_location
       flash[:danger] = "You have to sign your account to the page"
       redirect_to login_url
     end

@@ -24,12 +24,12 @@ class User < ApplicationRecord
     #get random token
     self.remember_token = User.new_token
     # save the encrypted token to database
-    update_attributes(:remember_digest, User.digest(remember_token))
+    update_attribute(:remember_digest, User.digest(remember_token))
   end
 
   #remove token
   def forget
-    update_attributes(:remember_digest, nil)
+    update_attribute(:remember_digest, nil)
   end
 
   #check given token is matches encrypted version in database
@@ -39,5 +39,5 @@ class User < ApplicationRecord
     # compare old token and given token
     BCrypt::Password.new(remember_digest).is_password?(remember_token)
   end
-  
+
 end

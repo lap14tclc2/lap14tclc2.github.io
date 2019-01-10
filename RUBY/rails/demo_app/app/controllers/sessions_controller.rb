@@ -10,7 +10,11 @@ class SessionsController < ApplicationController
       # login successfully
       # save user's id to session
       log_in user
-      redirect_to user_url(user)
+
+      #check whether 'remember me' checkbox is checked or not
+      params[:session][:remember_me] == '1' ? remember(user) : forget(user)
+
+      redirect_back_or user_url(user)
     else
       flash.now[:danger] = "Invalid information"
       render 'new'
