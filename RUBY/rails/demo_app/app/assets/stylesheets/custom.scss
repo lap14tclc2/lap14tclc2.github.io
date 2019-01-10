@@ -79,12 +79,6 @@ input {
     margin: 10px 0;
 }
 
-label.error {
-    color: red;
-    font-style: italic;
-    margin-left: 20px;
-}
-
 
 /* profile page*/
 
@@ -103,33 +97,39 @@ label.error {
     font-weight:bold;
 }
 
-/* login page*/
-.login {
+/* form page*/
+.form {
     h1 {
         text-align: center;
     }
 
     padding: 20px 0;
-        .col-md-6 {
-            padding: 20px 0;
-            border: 1px solid #111;
-
-            h1 {
+    .col-md-6 {
+        padding: 20px 0;
+        border: 1px solid #111;
+            
+        h1 {
             margin-bottom: 10px ;
             text-align: center;
-            }
+        }
 
-            form {
-                padding: 120px 50px;
-                input[type=submit] {
-                    width: 100%;
-                    text-align: center;
-                }
-            }
-
-            p.signup-link {
-                padding-top: 20px;
+        form {
+            padding: 120px 50px;
+            input[type=submit] {
+                width: 100%;
                 text-align: center;
             }
+
+            label.error {
+                color: red;
+                font-style: italic;
+                display: block;
+            }
         }
+
+        p.signup-link {
+            padding-top: 20px;
+            text-align: center;
+        }
+    }
 }

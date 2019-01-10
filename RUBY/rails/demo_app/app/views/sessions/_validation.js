@@ -1,6 +1,6 @@
-$("#new_user").validate({
+$(".login-form").validate({
     //error place
-    errorPlacement: function(error, element) {
+    errorPlacement: function (error, element) {
         error.insertBefore(element);
     },
 
