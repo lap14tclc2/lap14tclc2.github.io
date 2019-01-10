@@ -26,5 +26,20 @@ module SessionsHelper
     @current_user = nil
   end
 
+  def remember(User)
+    #add encrypted remember token to db
+    user.remember
+    # add remember token to cookie
+    cookie.permanent[:remember_token] = user.remember_token
+    # add encrypted user's id to cookie
+    cookie.permanent.signed[:user_id] = user.id
+  end
 
+  def forget(user)
+    #set encrypted remember token in databse is nil
+    user.forget
+    #delete information in cookie
+    cookie.delete(:user_id)
+    cookie.delete(:remember_token)
+  end
 end
