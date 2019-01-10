@@ -125,6 +125,20 @@ input {
                 font-style: italic;
                 display: block;
             }
+
+            /* remember me checkbox*/
+            .checkbox {
+                margin-top: 10px;
+                padding-bottom: 30px;
+                position: relative;
+                margin-left: 20px;
+                span {
+                    margin-left: 5px;
+                    position: absolute;
+                    top: 2px;
+                    font-weight: normal;
+                }
+            }
         }
 
         p.signup-link {
@@ -133,3 +147,4 @@ input {
         }
     }
 }
+
