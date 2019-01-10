@@ -22,6 +22,8 @@ module SessionsHelper
   end
 
   def log_out
+    #delete session and cookie
+    forget(current_user)
     session.delete(:user_id)
     @current_user = nil
   end
@@ -41,5 +43,16 @@ module SessionsHelper
     #delete information in cookie
     cookie.delete(:user_id)
     cookie.delete(:remember_token)
+  end
+
+  #redirect to stored location(or to the default)
+  def redirect_back_or(default)
+    redirect_to (session[:forwarding_url] || default)
+    session.delete(:forwarding_url)
+  end
+      
+  #store the url trying to be accessing
+  def store_location
+    session[:forwarding_url] = request.original_url if request.get?
   end
 end
