@@ -6,7 +6,8 @@ def valid_character(c)
     (r1.cover?(c.ord) || r2.cover?(c.ord))
 end
 def cipher(char, fixed_number)
-    ciphered_char = (char.ord + fixed_number).chr 
+  ciphered_char = (char.ord + fixed_number).chr 
+  if (fixed_number >= 0)
     if (ciphered_char > "z")
         ciphered_char = (ciphered_char.ord - "z".ord - 1 + "a".ord ).chr
     end 
@@ -14,8 +15,16 @@ def cipher(char, fixed_number)
     if (ciphered_char > "Z" && ciphered_char < "a")
         ciphered_char = (ciphered_char.ord - "Z".ord - 1 + "A".ord).chr
     end
+  else
+    if (ciphered_char < "a" && ciphered_char > "Z")
+        ciphered_char = (ciphered_char.ord + "z".ord - "a".ord + 1).chr
+    end
 
-    ciphered_char
+    if (ciphered_char < "A")
+        ciphered_char = (ciphered_char.ord + "Z".ord - "A".ord + 1).chr
+    end
+  end
+  ciphered_char
 end
 
 def ceaser_cipher(string, fixed_number)
@@ -34,4 +43,4 @@ def ceaser_cipher(string, fixed_number)
     end 
     ciphered_string
 end
-puts ceaser_cipher("WHAT A STRING", 5)
+puts ceaser_cipher("WHAT a STRING", -1)

@@ -1,23 +1,3 @@
-def get_random_number(arr)
-  rand = Random.new
-  return rand.rand(0..arr.size-1)
-end
-
-def calculated_length_of_loop(size)
-  n_factorial = 1
-  sub_factorial = 1
-
-  for i in 1..size
-    n_factorial *= i 
-  end
-
-  for i in 1..size-2
-    sub_factorial *= i 
-  end
-
-  n_factorial /(sub_factorial * 2)
-end
-
 def stock_picker(arr)
   record = Hash.new
 
@@ -33,7 +13,6 @@ def stock_picker(arr)
     end
     outer_index += 1
   end
-  p record
   record.each do |(key,value)|
     return key if value == record.values.max
   end

@@ -7,7 +7,7 @@ class CeaserCipherTest < Test::Unit::TestCase
   end
 
 #   def test_input_string_size_greater_than_zero
-#     assert_match(E)
+#     assert_match(E)rak
   def test_is_correct_result
     assert_equal('z', ceaser_cipher('a', -1))
     assert_equal('B', ceaser_cipher('Z', 2))
@@ -15,7 +15,9 @@ class CeaserCipherTest < Test::Unit::TestCase
   end
 
   def test_incorrect_result
-    assert_equal('{', ceaser_cipher('z', 1), "wrong encrypted!")
-    assert_equal('@', ceaser_cipher('A', -1), "wrong encrypted!")
+    assert_equal('a', ceaser_cipher('z', 1), "wrong encrypted!")
+    assert_equal('Z', ceaser_cipher('A', -1), "wrong encrypted!")
+
+    assert_equal('', ceaser_cipher('', -1), "wrong encrypted!")
   end
 end

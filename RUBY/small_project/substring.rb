@@ -6,7 +6,7 @@ end
 
 def substring(string, dictionary)
     #replace all of special character in string to space and convert string to array
-    string.gsub!(/[^a-zA-Z]/, ' ')
+    string.gsub!(/[^a-zA-Z]'/, ' ')
     arr = string.split(' ')
     p arr
 
