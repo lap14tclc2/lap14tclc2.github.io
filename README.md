@@ -46,9 +46,13 @@ Create there pages include:
 3.3. Rails
 
 3.3.1. Setting
++ Enviroment
+    + Rails version: 5.2.2
+    + Ruby version: 2.5.3
+    + development host: localhost:3000
 + Create a project using MySQL command: "rails new PROJECT_NAME -d mysql"
 + In config/database.yml: fill the sql native password
-+ Run bundle install to install all of gem in project
++ Run 'bundle install' to install all of gem in project
 + Run server: rails server/ rails s
 
 
