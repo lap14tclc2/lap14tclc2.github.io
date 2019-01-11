@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/lap14tclc2/ceaser_cipher.git
+  revision: 25a2842eed7977d2691b8674bf2dd8a24bf113ef
+  specs:
+    ceaser_cipher (0.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -255,6 +261,7 @@ DEPENDENCIES
   bootstrap-will_paginate
   byebug
   capybara (>= 2.15)
+  ceaser_cipher!
   chromedriver-helper
   coffee-rails (~> 4.2)
   duktape

@@ -1,6 +1,7 @@
 class SessionsController < ApplicationController
   # get page login
   def new
+    redirect_to root_url if logged_in?
   end
 
   #login with Post request

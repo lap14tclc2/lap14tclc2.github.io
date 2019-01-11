@@ -1,2 +1,25 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<% provide(:title, 'Home')%>
+<div class="row home">
+    <div class="col-md-10 col-md-offset-1">
+        <h1>Ceaser Cipher</h1>
+        <div class="col-md-6">
+            <div class="panel panel-info">
+                <div class="panel-heading">Input</div>
+                <div class="panel-body">
+                    <textarea name="" id="inputTa" cols="40" rows="5"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="panel panel-success">
+                <div class="panel-heading">Output</div>
+                <div class="panel-body">
+                    <textarea name="" id="outputTa"  cols="40" rows="5"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <button id="sendInput" class="btn btn primary"> Send </button>
+    </div>
+</div>

@@ -22,6 +22,8 @@ gem "win32console"
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
 
+# ceaser_cipher gem for testing
+gem 'ceaser_cipher', git: 'https://github.com/lap14tclc2/ceaser_cipher.git'
 # Use mysql as the database for Active Record
 gem 'mysql2', '>= 0.4.4', '< 0.6.0'
 # Use Puma as the app server
