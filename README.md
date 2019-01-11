@@ -48,6 +48,7 @@ Create there pages include:
 3.3.1. Setting
 + Create a project using MySQL command: "rails new PROJECT_NAME -d mysql"
 + In config/database.yml: fill the sql native password
++ Run bundle install to install all of gem in project
 + Run server: rails server/ rails s
 
 
