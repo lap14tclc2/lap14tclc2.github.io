@@ -2,11 +2,21 @@
 <div class="row home">
     <div class="col-md-10 col-md-offset-1">
         <h1>Ceaser Cipher</h1>
+        <blockquote>
+            Caesar cipher, also known as Caesar's cipher, the shift cipher, Caesar's code or Caesar shift, is one of the simplest and most widely known encryption techniques
+            <div class="well">
+                <p>Example: </p>
+                <p>Input: a / position: 1</p>
+                <p>Output: b</p>
+            </div>
+        </blockquote>
+        <p class="errorMessage"></p>
         <div class="col-md-6">
             <div class="panel panel-info">
                 <div class="panel-heading">Input</div>
                 <div class="panel-body">
-                    <textarea name="" id="inputTa" cols="40" rows="5"></textarea>
+                    <textarea name="" id="inputCipher" cols="40" rows="5"></textarea> <span>/</span> 
+                    <input type="text" id="numberPosition">
                 </div>
             </div>
         </div>
@@ -15,7 +25,7 @@
             <div class="panel panel-success">
                 <div class="panel-heading">Output</div>
                 <div class="panel-body">
-                    <textarea name="" id="outputTa"  cols="40" rows="5"></textarea>
+                    <textarea name="" id="outputCipher"  cols="40" rows="5" disabled></textarea>
                 </div>
             </div>
         </div>
@@ -23,3 +33,7 @@
         <button id="sendInput" class="btn btn primary"> Send </button>
     </div>
 </div>
+
+<script type="text/javascript">
+    <%= render  "ajax_call.js" %>
+</script>
