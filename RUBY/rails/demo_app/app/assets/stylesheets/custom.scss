@@ -1,0 +1,203 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+/* component style */
+* {
+  box-sizing: border-box;
+}
+
+body {
+    margin-top: 50px;
+    padding: 0;
+}
+
+/* header layout*/
+.navbar-default {
+    font-size: 1.2em;
+    .navbar-nav {
+        li {
+            a {
+                text-decoration: none;
+                &:hover {
+                    color: orange;
+                }
+
+                &:active {
+                    color: blueviolet;
+                }
+            }
+        }
+    }
+}
+
+/* footer layout*/
+
+footer {
+    margin-top: 45px;
+    padding-top: 45px;
+    border-top: 1px lightslategrey solid;
+    
+    small {
+        font-size: 16px;
+        font-style: italic;
+    }
+    ul {
+        list-style: none;
+        float: right;
+
+        li{
+            float: left;
+            margin: 0 1.5em;
+            a {
+                text-decoration: none;
+                &:hover {
+                    color: orange;
+                }
+
+                &:active {
+                    color: blueviolet;
+                }
+            }
+        }
+    }
+}
+
+/* error explain */
+#error_explanation {
+    color: red;
+    ul {
+        color: red;
+        margin: 0 0 3px 0;
+    }
+}
+
+
+/* form */
+
+input {
+    margin: 10px 0;
+}
+
+
+/* profile page*/
+
+.container {
+    padding-top: 5%;
+}
+
+.container .img{
+    text-align:center;
+}
+.container .details{
+    border-left:3px solid #ded4da;
+}
+.container .details p{
+    font-size:15px;
+    font-weight:bold;
+}
+
+/* form page*/
+.form {
+    h1 {
+        text-align: center;
+    }
+
+    padding: 20px 0;
+    .col-md-6 {
+        padding: 20px 0;
+        border: 1px solid #111;
+            
+        h1 {
+            margin-bottom: 10px ;
+            text-align: center;
+        }
+
+        form {
+            padding: 120px 50px;
+            input[type=submit] {
+                width: 100%;
+                text-align: center;
+            }
+
+            label.error {
+                color: red;
+                font-style: italic;
+                display: block;
+            }
+
+            /* remember me checkbox*/
+            .checkbox {
+                margin-top: 10px;
+                padding-bottom: 30px;
+                position: relative;
+                margin-left: 20px;
+                span {
+                    margin-left: 5px;
+                    position: absolute;
+                    top: 2px;
+                    font-weight: normal;
+                }
+            }
+        }
+
+        p.signup-link {
+            padding-top: 20px;
+            text-align: center;
+        }
+    }
+}
+
+/* home page */
+.home {
+    h1 {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .errorMessage {
+        color: red;
+        font-style: italic;
+        margin-left: 10px;
+        font-size: 20px;
+    }
+
+    blockquote {
+        font-style: italic;
+        .well {
+            font-size: 14px;
+            font-weight: 600;
+        }
+        margin-bottom: 100px;
+    }
+
+    .panel {
+        background-color: #111;
+        .panel-body {
+            display: flex;
+            justify-content: center;
+            textarea, input {
+                background-color: #111;
+                color: white;
+            }
+
+            input {
+                max-height: 20px;
+                max-width: 50px;
+                margin-left: 10px;
+            }
+
+            span {
+                font-weight: bold;
+                font-size: 25px;
+                margin-top: 5px;
+                margin-left: 10px;
+                color: white;
+            }
+        }
+    }
+
+    button {
+        width: 120px;
+        margin-left: 18px;
+    }
+}
